@@ -13,8 +13,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   margin: 0;
+  background-color: #478AEE; /* Primary Blue Background */
 
 
   /* padding: 0; */
@@ -29,13 +30,14 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  /* background-color: #fff; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header styles */
 header {
-  color: rgb(71, 138, 238);
+  /* color: rgb(71, 138, 238); */
+  color: snow;
   margin-bottom: 20px;
 }
 /* Header styles with background image */
@@ -68,6 +70,15 @@ footer {
   width: 100%;
   max-width: 600px;
   margin-bottom: 20px;
+
+
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF; /* White Background for Sections */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .image {
   width: 100px;
