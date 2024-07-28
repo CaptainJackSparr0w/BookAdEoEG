@@ -118,3 +118,75 @@ footer {
 .content ul li {
   margin: 5px 20px;
 }
+
+
+  /* The popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (hidden by default) */
+.popup .popup-content {
+  visibility: hidden;
+  width: 300px; /* Adjust as needed */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the popup */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Popup arrow */
+.popup .popup-content::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Show the popup when hovering */
+.popup:hover .popup-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Image styling */
+.popup img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .popup .popup-content {
+      width: 90%;
+      bottom: auto;
+      top: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 5px;
+  }
+
+  .popup .popup-content::after {
+      top: auto;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-color: transparent transparent #fff transparent;
+  }
+}
