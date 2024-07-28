@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESSENCE OF ENGLISH GRAMMAR</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16655753614">
@@ -20,33 +21,6 @@
 </head>
 
 <body>
-    <!-- <div class="container">
-        <img src=""/>
-        <header style="background-image: url('assets/images/workshop_front.png');background-size: cover;">
-            <h1>अंग्रेज़ी बोलना सीखें, सही तरीके से</h1>
-        </header>
-        <main>
-            <p>यह पुस्तक आपको अंग्रेज़ी के सारे नियम सही तरीके से सिखाती है</p>
-            <p>और उसका अभ्यास करने के लिए भरपूर प्रश्न-उत्तर भी उपलब्ध करवाती है।</p>
-            <br>
-            जिससे आप न केवल व्याकरण के नियम सही तरीके से सीखेंगे, 
-            <br>
-            साथ ही साथ आपके शब्दकोश में भी वृद्धि होगी।
-            <br>
-            Point 1 : Description
-            <br>
-            Point 2 : Description
-            <br>
-            Point 3 : Description
-            <br>
-            Point 4 : Description
-            <br>
-            Point 5 : Description
-        </main>
-        <footer>
-            <p>&copy; 2024 My Website</p>
-        </footer>
-    </div> -->
     <div class="container">
         <img src="" />
         <span style="background-color:#7cacf8;">बुक प्राप्त करने के लिए सम्पर्क करें +91 7014258681</span>
@@ -60,10 +34,12 @@
         <main>
             <div class="section">
                 <!-- <img src="path_to_image" alt="Author Image" class="image"> -->
-                <img src="assets/images/eoeg.png" alt="Book Image" class="bookCover">
-                <div class="popup">
-                    <span>Expand Image</span>
-                    <div class="popup-content"><img src="assets/images/eoeg.png" alt="Book Image" >
+                <img src="assets/images/eoeg.png" alt="Book Image" class="bookCover" id="popupImage">
+                <span>tap to expand</span>
+                <div class="popup" id="imagePopup">
+                    <div class="popup-content">
+                        <button class="close" id="closePopup">&times;</button>
+                        <img style="width: 400px;height: 600px;" src="assets/images/eoeg.png" alt="Popup Image">
                     </div>
                 </div>
             </div>
